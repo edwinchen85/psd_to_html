@@ -103,6 +103,80 @@ table {
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
-.container {
-  .round(12px);
+.gradient (@from, @to) {
+  background-color: @from;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+  background-image: -webkit-linear-gradient(top, @from, @to);
+  background-image:    -moz-linear-gradient(top, @from, @to);
+  background-image:      -o-linear-gradient(top, @from, @to);
+  background-image:         linear-gradient(to bottom, @from, @to);
+}
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @spread: 0px, @color: #000) {
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.inner-shadow (inset, @x: 0, @y: 0, @blur: 1px, @color: #000) {
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.text-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+     text-shadow: @arguments;
+}
+
+.transition (@duration: 0.2s, @ease: ease-in) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+
+
+
+/***********************************************************************************************/
+/* 1. General Styles */
+/***********************************************************************************************/
+body {
+  font: 14px/21px @body-font;
+  color: @text-color;
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 21px;
+}
+
+h1 {
+  font: 36px/1.5em @heading-font;
+}
+
+h2,
+h3 {
+  font: 21px/1.5em @heading-font;
+}
+
+h4 {
+  font: 16px/1.5em @heading-font;
+}
+
+h5 {
+  font: 14px/1.5em @heading-font;
+}
+
+h6 {
+  font: 12px/1.5em @heading-font;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-color-hover;
+  }
 }
