@@ -181,6 +181,19 @@ a {
   }
 }
 
+blockquote {
+  font: italic 21px/1.5em @serif-font;
+  color: @blockquote-color;
+
+  cite {
+    display: block;
+    margin-top: 42px;
+
+    font-size: 16px;
+    font-style: normal;
+  }
+}
+
 
 
 
@@ -229,6 +242,9 @@ a {
   text-align: center;
   padding: 3em 0;
 
+  -webkit-box-shadow: inset 0px -8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -8px 0px rgba(0, 0, 0, 0.2);
+
   h1 {
     color: white;
     font: 42px/1.5em @heading-font;
@@ -240,6 +256,39 @@ a {
     color: @header-main-color;
     font: 26px/1.5em @heading-font;
     .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .5));
+  }
+
+  blockquote {
+    width: 50%;
+    margin: 0 auto;
+
+    position: relative;
+
+    .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .5));
+
+    &::before {
+      position: absolute;
+      content: url('../images/blockquote-dark-top.png');
+      width: 33px;
+      height: 23px;
+
+      left: -2em;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: url('../images/blockquote-dark-bottom.png');
+      width: 33px;
+      height: 23px;
+
+      right: -2em;
+      bottom: 70px;
+    }
+
+    cite {
+      color: white;
+    }
   }
 }
 
