@@ -221,6 +221,71 @@ a {
 
 
 /***********************************************************************************************/
+/* 3. Main CTA */
+/***********************************************************************************************/
+.section-main-cta {
+  background: url('../images/pattern-dark-blue.jpg');
+
+  text-align: center;
+  padding: 3em 0;
+
+  h1 {
+    color: white;
+    font: 42px/1.5em @heading-font;
+
+    .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .5));
+  }
+
+  h2 {
+    color: @header-main-color;
+    font: 26px/1.5em @heading-font;
+    .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .5));
+  }
+}
+
+.form-single-field {
+  padding: 3em 0;
+
+  input[type="email"],
+  input[type="text"] {
+    height: 63px;
+    width: 100%;
+
+    font-size: 21px/1.5em @body-font;
+    padding: 0 8em 0 1em;
+
+    .round(3px);
+    .box-shadow(0, 0, 0, 8px, rgba(0, 0, 0, 0.15));
+
+    outline: none;
+    border: none;
+  }
+
+  >p {
+    width: 50%;
+    margin: 0 auto;
+
+    position: relative;
+
+    input[type="submit"] {
+      position: absolute;
+
+      right: 1em;
+      top: .75em;
+
+      cursor: pointer;
+
+      font: bold 14px @body-font;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+    }
+  }
+}
+
+
+
+
+/***********************************************************************************************/
 /* Buttons */
 /***********************************************************************************************/
 .button {
