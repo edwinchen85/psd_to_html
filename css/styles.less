@@ -194,6 +194,13 @@ blockquote {
   }
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: lighten(@border-color, 5%);
+  margin: 3em 0;
+}
+
 .link-go-top {
   font: italic 14px @serif-font;
 }
@@ -426,6 +433,71 @@ blockquote {
 
     span[class~="icon-big"] {
       float: left;
+    }
+  }
+}
+
+
+
+
+/***********************************************************************************************/
+/* 6. Customers */
+/***********************************************************************************************/
+.section-customers {
+  background: white;
+
+  text-align: center;
+  padding: 3em 0;
+
+  h1 {
+    color: @light-bg-heading-one;
+    .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
+  }
+
+  h2 {
+    color: @light-bg-heading-two;
+    .text-shadow(1px, 1px, 1px, rgba(0, 0, 0, 0.5));
+  }
+
+  blockquote {
+    position: relative;
+    margin: 0 2em;
+
+    &::before {
+      position: absolute;
+      content: url('../images/blockquote-light-top.png');
+      width: 33px;
+      height: 23px;
+
+      left: -2em;
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: url('../images/blockquote-light-bottom.png');
+      width: 33px;
+      height: 23px;
+
+      right: -2em;
+      bottom: 70px;
+    }
+
+    cite {
+      color: @text-color;
+    }
+  }
+}
+
+.list-customers {
+  margin-left: 3em;
+
+  li {
+    text-align: left;
+    float: left;
+
+    img {
+      margin: 0 1.5em 1.5em 0;
     }
   }
 }

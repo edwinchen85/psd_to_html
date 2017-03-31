@@ -192,6 +192,12 @@ blockquote cite {
   font-size: 16px;
   font-style: normal;
 }
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ededed;
+  margin: 3em 0;
+}
 .link-go-top {
   font: italic 14px "Gentium Basic", Georgia, serif;
 }
@@ -380,6 +386,55 @@ blockquote cite {
 }
 .list-small-features li span[class~="icon-big"] {
   float: left;
+}
+/***********************************************************************************************/
+/* 6. Customers */
+/***********************************************************************************************/
+.section-customers {
+  background: white;
+  text-align: center;
+  padding: 3em 0;
+}
+.section-customers h1 {
+  color: #3b5568;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-customers h2 {
+  color: #6694b4;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-customers blockquote {
+  position: relative;
+  margin: 0 2em;
+}
+.section-customers blockquote::before {
+  position: absolute;
+  content: url('../images/blockquote-light-top.png');
+  width: 33px;
+  height: 23px;
+  left: -2em;
+  top: 0;
+}
+.section-customers blockquote::after {
+  position: absolute;
+  content: url('../images/blockquote-light-bottom.png');
+  width: 33px;
+  height: 23px;
+  right: -2em;
+  bottom: 70px;
+}
+.section-customers blockquote cite {
+  color: #6c6c6c;
+}
+.list-customers {
+  margin-left: 3em;
+}
+.list-customers li {
+  text-align: left;
+  float: left;
+}
+.list-customers li img {
+  margin: 0 1.5em 1.5em 0;
 }
 /***********************************************************************************************/
 /* Buttons */
