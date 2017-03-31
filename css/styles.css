@@ -344,6 +344,44 @@ blockquote cite {
   margin-bottom: 21px;
 }
 /***********************************************************************************************/
+/* 5. Small Features */
+/***********************************************************************************************/
+.section-small-features {
+  background: url('../images/pattern-dark.jpg');
+  text-align: center;
+  padding: 3em 0;
+}
+.section-small-features h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-small-features h2,
+.section-small-features h3 {
+  color: #3694b7;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-small-features .link-go-top:hover {
+  color: white;
+}
+.list-small-features {
+  margin: 3em 0 1.5em 0;
+}
+.list-small-features li {
+  color: white;
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+.list-small-features li h3 {
+  margin-bottom: 21px;
+}
+.list-small-features li h3,
+.list-small-features li p {
+  margin-left: 63px;
+}
+.list-small-features li span[class~="icon-big"] {
+  float: left;
+}
+/***********************************************************************************************/
 /* Buttons */
 /***********************************************************************************************/
 .button {
