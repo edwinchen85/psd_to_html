@@ -194,7 +194,9 @@ blockquote {
   }
 }
 
-
+.link-go-top {
+  font: italic 14px @serif-font;
+}
 
 
 /***********************************************************************************************/
@@ -328,6 +330,50 @@ blockquote {
       -webkit-font-smoothing: antialiased;
       font-smoothing: antialiased;
     }
+  }
+}
+
+
+
+
+/***********************************************************************************************/
+/* 4. Big Features */
+/***********************************************************************************************/
+.section-big-features {
+  background: url('../images/pattern-light.jpg');
+
+  text-align: center;
+  padding: 3em 0;
+
+  h1, h3 {
+    color: @light-bg-heading-one;
+    .text-shadow(1px, 1px, 1px rgba(255, 255, 255, 0.5));
+  }
+
+  h2 {
+    color: @light-bg-heading-two;
+  }
+}
+
+.list-big-features {
+  margin: 3em 0 1.5em 0;
+
+  li {
+    background: white;
+    border: 1px solid @border-color;
+
+    .round(3px);
+    .box-shadow(0, 0, 5px, 0 rgba(0, 0, 0, 0.1));
+    padding: 3em 1.5em 1.5em 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  h3 {
+    margin-bottom: 21px;
+  }
+
+  span[class~="icon-big"] {
+    margin-bottom: 21px;
   }
 }
 
