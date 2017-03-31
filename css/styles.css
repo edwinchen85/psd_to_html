@@ -257,3 +257,41 @@ a:hover {
   -webkit-box-shadow: 0 0 0 4px #f2f2f2, inset 0 1px 5px #b92b16;
   box-shadow: 0 0 0 4px #f2f2f2, inset 0 1px 5px #b92b16;
 }
+/***********************************************************************************************/
+/* Icons */
+/***********************************************************************************************/
+.icon-small {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('../images/sprites.png');
+}
+.icon-big {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url('../images/sprites.png');
+}
+/* Small Icons */
+.phone {
+  background-position: 0 0;
+  margin: 0 0.75em -3px 0;
+}
+.envelope {
+  background-positin: -64px 0;
+  margin: 0 0.75em -3px 0;
+}
+.arrow-right {
+  background-position: -128px 0;
+  margin: 0 0 -4px 0.75em;
+}
+/* Big Icons */
+.ecommerce {
+  background-position: 0 -64px;
+}
+.books {
+  background-position: -64px -64px;
+}
+.settings {
+  background-position: -128px -64px;
+}
