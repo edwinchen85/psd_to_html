@@ -454,6 +454,45 @@ hr {
   margin: 3em 0 1.5em 0;
 }
 /***********************************************************************************************/
+/* Footer */
+/***********************************************************************************************/
+.site-footer {
+  padding-bottom: 1.5em;
+}
+.list-footer-menu li,
+.list-social-icons li {
+  float: left;
+}
+.list-social-icons {
+  float: right;
+}
+.list-social-icons li {
+  margin: 0 0 .75em .75em;
+}
+.list-social-icons li a {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+.twitter,
+.facebook,
+.linkedin,
+.googleplus {
+  background: url('../images/sprites.png');
+}
+.twitter {
+  background-position: 0 -192px;
+}
+.facebook {
+  background-position: -64px -192px;
+}
+.googleplus {
+  background-position: -128px -192px;
+}
+.linkedin {
+  background-position: -192px -192px;
+}
+/***********************************************************************************************/
 /* Buttons */
 /***********************************************************************************************/
 .button {
