@@ -437,12 +437,80 @@ hr {
   margin: 0 1.5em 1.5em 0;
 }
 /***********************************************************************************************/
+/* Gallery */
+/***********************************************************************************************/
+.section-gallery {
+  background: url('../images/pattern-light.jpg');
+  text-align: center;
+  padding: 3em 0;
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.section-gallery h1 {
+  color: #3b5568;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.section-gallery h2 {
+  color: #6694b4;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.cycle-slideshow {
+  margin: 3em auto;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+.cycle-slideshow img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.cycle-prev,
+.cycle-next {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  display: block;
+  background: url('../images/sprites.png');
+  cursor: pointer;
+}
+.cycle-prev {
+  top: 50%;
+  left: -6em;
+  margin-top: -21px;
+  background-position: 0 -128px;
+}
+.cycle-prev:hover {
+  background-position: -128px -128px;
+}
+.cycle-next {
+  top: 50%;
+  right: -6em;
+  margin-top: -21px;
+  background-position: -64px -128px;
+}
+.cycle-next:hover {
+  background-position: -192px -128px;
+}
+#alt-caption {
+  font: italic 14px/21px "Gentium Basic", Georgia, serif;
+}
+#alt-caption::before {
+  content: '- ';
+}
+#alt-caption::after {
+  content: ' -';
+}
+/***********************************************************************************************/
 /* Footer CTA */
 /***********************************************************************************************/
 .section-footer-cta {
   background-color: white;
   text-align: center;
   padding: 3em 0 0 0;
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .section-footer-cta h1 {
   color: #3b5568;
