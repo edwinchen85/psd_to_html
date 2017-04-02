@@ -684,3 +684,107 @@ hr {
   -o-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
 }
+/***********************************************************************************************/
+/* 14. Responsive/adaptive stuff */
+/***********************************************************************************************/
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .logo-container-mobile,
+  .top-container-mobile {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  .logo a {
+    background-position: center center;
+  }
+  .form-single-field > p {
+    width: 75%;
+  }
+  .cycle-next,
+  .cycle-prev {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 3em;
+    display: inline-block;
+  }
+  .cycle-prev {
+    margin-right: .5em;
+  }
+  .cycle-next {
+    margin-left: .5em;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 2em;
+  }
+  .logo-container-mobile,
+  .top-container-mobile {
+    width: 100%;
+    display: block;
+    text-align: center;
+    float: none;
+  }
+  .logo a {
+    background-position: center center;
+  }
+  .button-top-cta {
+    float: none;
+  }
+  .list-top-contact-info {
+    float: none;
+    width: 100%;
+  }
+  .list-top-contact-info li {
+    float: none;
+    padding-right: 0;
+    margin-right: 0;
+    border: none;
+  }
+  .list-top-contact-info li p {
+    margin-bottom: 1.5em;
+  }
+  .form-single-field > p {
+    width: 75%;
+  }
+  .cycle-next,
+  .cycle-prev {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 3em;
+    display: inline-block;
+  }
+  .cycle-prev {
+    margin-right: .5em;
+  }
+  .cycle-next {
+    margin-left: .5em;
+  }
+  .section-customers blockquote {
+    margin-bottom: 42px;
+  }
+  .list-social-icons {
+    float: none;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .form-single-field input[type="submit"] {
+    display: none;
+  }
+  .form-single-field input[type="email"],
+  .form-single-field input[type="text"] {
+    padding: 0 1em;
+  }
+  .section-main-cta blockquote {
+    width: 75%;
+  }
+}
